@@ -1,0 +1,72 @@
+# --- Dolibarr Module Specifics ---
+# Ignore the build directory often used by module packagers
+build/
+bin/
+
+# Ignore packaged module archives
+*.zip
+*.tgz
+*.rar
+*.gz
+
+# Ignore local configuration files if you have test scripts
+conf/conf.php
+config.php
+test/config.php
+
+# --- Dependencies ---
+# Composer dependencies (if your module uses Composer)
+/vendor/
+
+# Node modules (if your module uses NPM/Yarn for assets)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# --- Documentation & Temporary Files ---
+# Ignore generated documentation (if using Doxygen or similar)
+doc/html/
+doc/latex/
+doc/man/
+_build/
+
+# Ignore temporary logs
+*.log
+
+# --- IDE & Editor Specifics ---
+# JetBrains (PhpStorm)
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Eclipse
+.project
+.settings/
+.buildpath
+
+# NetBeans
+nbproject/
+
+# Generic Editor Backups
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# --- Operating System Files ---
+# Mac
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~

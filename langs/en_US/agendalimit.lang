@@ -1,0 +1,68 @@
+# Copyright (C) 2025 Your Name <your@email.com>
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+#
+# Generic
+#
+
+# Module label
+Module500100Name = Agenda Limit
+# Module description
+Module500100Desc = Limit how far ahead users can view events in the Agenda/Calendar
+
+#
+# Admin page
+#
+AgendaLimitSetup = Agenda Limit Setup
+AgendaLimitEnabled = Enable agenda lookahead limit
+AgendaLimitDefaultDays = Default lookahead limit (in days)
+AgendaLimitUseGroups = Allow per-group limit settings
+Settings = Settings
+UserLimits = User Limits
+GroupLimits = Group Limits
+LimitEnabled = Limit Enabled
+LimitDays = Days Ahead
+Days = days
+
+#
+# Messages
+#
+AgendaLimitExceeded = You cannot view agenda events beyond %s. Your lookahead is limited.
+AgendaLimitActiveUntil = Your agenda view is limited to events until %s
+UserLimitSaved = User limit settings saved successfully
+UserLimitDeleted = User limit settings deleted
+GroupLimitSaved = Group limit settings saved successfully
+GroupLimitDeleted = Group limit settings deleted
+GroupLimitsDisabled = Group limits are currently disabled. Enable them in the Settings tab.
+
+#
+# Info boxes
+#
+AgendaLimitInfo = <strong>How it works:</strong><br>- When enabled, users will not be able to view agenda events beyond the specified number of days from today.<br>- Administrators and users with the "Bypass agenda limit" permission are not affected.<br>- You can set different limits for individual users or user groups.<br>- If a user belongs to multiple groups with different limits, the most restrictive (smallest) limit applies.
+AgendaLimitUserInfo = <strong>User-specific limits:</strong><br>- Set individual limits for specific users here.<br>- User-specific settings override group settings.<br>- If "Limit Enabled" is set to "No", the user will have unlimited access regardless of group settings.<br>- Users without a specific setting will use the default limit or their group's limit.
+AgendaLimitGroupInfo = <strong>Group-based limits:</strong><br>- Set limits for entire user groups here.<br>- If a user belongs to multiple groups, the smallest (most restrictive) limit applies.<br>- User-specific settings override group settings.<br>- Groups without a setting configured will use the default limit.
+
+#
+# Permissions
+#
+Permission500101 = Configure agenda limit settings
+Permission500102 = Bypass agenda lookahead limit
+
+#
+# Other
+#
+NoUsers = No active users found
+NoGroups = No user groups found
+ConfirmDelete = Are you sure you want to delete this limit setting?
